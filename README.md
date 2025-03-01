@@ -115,9 +115,30 @@ Result: 工作流2的执行结果
 
 请根据你的实际使用情况配置环境变量，并确保网络连接正常，Dify API 服务可用。
 
----
-
-希望这个 README 文件能够帮助你理解和使用这个 Dify 定时工作流执行脚本。 如有任何问题或建议，欢迎提出。
+## 青龙面板示例
+1. **添加依赖**：
+依赖管理-创建依赖-依赖类型（python3）
+名称：requests
+![image](https://github.com/user-attachments/assets/016b4fcb-a65b-431c-9290-87da9bda5e04)
+2. **添加订阅**：
+复制以下命令粘贴至名称，设置定时规则
 ```
+ql repo https://github.com/leochen-g/dify-schedule.git "ql_"
+```
+![image](https://github.com/user-attachments/assets/270c7f71-9ed2-4935-9fe9-9e03fe2190e6)
+订阅成功后手动运行一次，运行成功脚本管理处有对应的脚本
+![image](https://github.com/user-attachments/assets/48973eb2-7da3-46f7-8aab-fb7d46c3978f)
 
-请问这个 README 文本是否满足你的需求？ 如果有任何需要修改或补充的地方，请随时告诉我。
+3. **添加环境变量**
+在环境变量中添加DIFY_TOKENS 和 DIFY_BASE_URL
+![image](https://github.com/user-attachments/assets/9b485c19-994b-4376-83db-2800f49d0867)
+4. **添加定时任务** 
+```
+task ice-lemon_dify-schedule_python/dify-schedule.py
+```
+![image](https://github.com/user-attachments/assets/c24c4404-33a9-4e85-842e-ff29814188a2)
+
+5. **运行示意**
+![image](https://github.com/user-attachments/assets/1cc87abc-5cde-4f6a-85bd-06b7d9483107)
+6. **注意事项**
+本脚本仅包含基础定时任务，由 [https://github.com/leochen-g/dify-schedule](https://github.com/leochen-g/dify-schedule/blob/main/ql_dify_workflow.js) 转换而来，暂时不包含其通知功能。
