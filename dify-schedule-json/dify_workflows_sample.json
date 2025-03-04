@@ -1,0 +1,30 @@
+[
+    {
+      "token": "YOUR_DIFY_TOKEN_FOR_WORKFLOW_1",
+      "inputs": {
+        "city": "北京",
+        "webhook": "webhook_beijing_url"
+      }
+    },
+    {
+      "token": "YOUR_DIFY_TOKEN_FOR_WORKFLOW_1",
+      "inputs": {
+        "city": "上海",
+        "webhook": "webhook_shanghai_url"
+      }
+    },
+    {
+      "token": "YOUR_DIFY_TOKEN_FOR_WORKFLOW_2",
+      "inputs": {
+        "product": "产品A",
+        "region": "华东地区"
+      }
+    }
+    ,
+    {
+      "token": "YOUR_DIFY_TOKEN_FOR_WORKFLOW_3",
+      "inputs": {
+        "query": "今天天气怎么样？"
+      }
+    }
+  ]
